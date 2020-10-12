@@ -1,5 +1,3 @@
-// ExecuteAssembly.cpp : This file contains the 'main' function. Program execution begins and ends there.
-//
 #define _CRT_SECURE_NO_WARNINGS
 
 #include <Windows.h>
@@ -245,9 +243,7 @@ HRESULT CallMethod(std::string assembly, std::string args, std::string& outputSt
 		goto Cleanup;
 
 	//This will take our arguments and format them so they look like command line arguments to main (otherwise they are treated as a single string)
-
-
-
+	//Credit to https://github.com/b4rtik/metasploit-execute-assembly/blob/master/HostingCLR_inject/HostingCLR/HostingCLR.cpp for getting this to work properly
 	if (args.empty())
 	{
 
