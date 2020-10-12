@@ -375,7 +375,7 @@ int main()
 		return 1;
 	}
 
-	//No real reason to do this, it just works with the code I already had
+	//No real reason to do this, it just works with the code I had already written
 	std::string assemblyStr((char*)lpFileBuffer, lpNumberOfBytesRead);
 
 	//Execute the Assembly
